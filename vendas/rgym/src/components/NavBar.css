@@ -1,0 +1,168 @@
+/* NavBar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 200vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px 4%;
+    color: #242525;
+    /*posiciona no topo do site*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: #000000;
+    backdrop-filter: blur(10px);
+    /* efeito embaçado */
+    -webkit-backdrop-filter: blur(10px);
+    /* suporte para Safari */
+    padding: 10px 4%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#RGYM {
+    color: #FFCC00;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#RGYM span {
+    color: #FFFFFF;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /*remove os pontos das listas*/
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .2s;
+}
+
+nav ul li a:hover {
+    color: #FFCC00;
+}
+
+.btn-comece button {
+    background: #FFCC00;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-comece button:hover {
+    background-color: #f7f320;
+}
+
+#menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+#menu-btn .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+#menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 20;
+    /* pra ficar acima do menu */
+}
+
+#menu-btn .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+#menu-btn .close-icon {
+    font-size: 28px;
+    color: white;
+}
+
+/* responsivo */
+@media (max-width: 815px) {
+
+    #menu-btn {
+        display: flex;
+    }
+
+    #nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.6);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        transition: .5s;
+
+    }
+
+    #nav-list.ativo {
+        display: flex;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+    }
+
+    #nav-list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-comece {
+        width: 100%;
+    }
+
+    .btn-comece button {
+        width: 100%;
+    }
+}

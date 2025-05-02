@@ -1,0 +1,253 @@
+.container-v2 {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background:
+        radial-gradient(circle at center, rgba(195, 173, 3, 0) 80%, rgba(214, 225, 9, 0.6) 100%),
+        linear-gradient(120deg, #0e0e0e, #1a1a1a);
+    background-blend-mode: overlay;
+}
+
+.geral-texto,
+.geral-img {
+    max-width: 1200px;
+    width: 48%;
+}
+
+.geral-texto {
+    margin-top: 50px;
+}
+
+.elemento-academia {
+
+    border: 1px solid #c9a30c;
+    width: fit-content;
+    padding: 14px 20px;
+    margin: 20px 8%;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    background-color: #302C1F;
+    display: flex;
+    gap: 12px;
+}
+
+.elemento-academia p {
+    color: #FECB00;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.texto-capa {
+    margin: 20px;
+    text-align: left;
+}
+
+.texto-h1 p {
+    margin: 20px 8%;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.texto-h1 span {
+    color: #FECB00;
+}
+
+.texto-capa h3 {
+    color: #D0CFBB;
+    margin: 0px 8%;
+    font-size: 30px;
+}
+
+.frase-capa {
+    margin: 20px 8%;
+    display: flex;
+    align-items: stretch;
+    padding: 10px;
+    gap: 10px;
+}
+
+.barra-lateral {
+    width: 6px;
+    background-color: #FECB00;
+    flex-shrink: 0;
+}
+
+.frase-capa p {
+    color: aliceblue;
+    margin: 0;
+    line-height: 1.5;
+    max-width: 580px;
+    font-size: 18px;
+}
+
+.geral-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.circulo {
+    background-color: #fecb0028;
+    border-radius: 100%;
+    width: 70%;
+}
+
+.imgs {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 0;
+    /* necessário */
+}
+
+.imgs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/grade.png);
+    /* caminho relativo a Presentation.css */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+    /* fica atrás das imagens */
+    border-radius: 20px;
+}
+
+.imgs img,
+.imgs video {
+    position: relative;
+    z-index: 2;
+    /* acima do ::before */
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transform: perspective(800px) rotateY(-10deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.imgs img:nth-child(2),
+.imgs video:nth-child(2) {
+    transform: perspective(800px) rotateY(10deg);
+}
+
+.imgs img:hover,
+.imgs video:hover {
+    transform: scale(1.05);
+}
+
+.butoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.botao-plano {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 4px;
+    background-color: #FECB00;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.botao-rgym {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 4px;
+    background-color: #FECB00;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .container-v2 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .elemento-academia {
+        margin: 20px auto;
+    }
+
+    .geral-texto,
+    .geral-img {
+        width: 100%;
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .texto-h1 p {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .texto-capa h3 {
+        text-align: center;
+    }
+
+    .frase-capa {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .barra-lateral {
+        height: 6px;
+        width: 60px;
+    }
+
+    .circulo {
+        background-color: #fecb0028;
+        border-radius: 100%;
+        width: 80%;
+    }
+
+    .butoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-plano {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .botao-rgym {
+        width: 60%;
+        justify-content: center;
+
+    }
+
+    .imgs img,
+    .imgs video {
+        width: 150px;
+        height: 220px;
+        transform: none;
+    }
+}
