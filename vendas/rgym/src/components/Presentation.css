@@ -24,11 +24,10 @@
 }
 
 .elemento-academia {
-
     border: 1px solid #c9a30c;
     width: fit-content;
     padding: 14px 20px;
-    margin: 20px 8%;
+    margin: 20px 10%;
     border-radius: 50px;
     text-align: center;
     align-items: center;
@@ -176,7 +175,9 @@
     gap: 10px;
     padding: 14px;
     border-radius: 4px;
-    background-color: #FECB00;
+    background-color: transparent;
+    border: 2px solid #FECB00;
+    color: #FECB00;
     font-weight: bold;
     font-size: 14px;
 }
