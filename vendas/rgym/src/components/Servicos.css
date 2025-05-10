@@ -1,0 +1,116 @@
+.container-v4 {
+    background-color: #000000;
+    padding: 60px 0;
+}
+
+.nossos-servicos {
+    margin: 0 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.nossos-servicos h2 {
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nossos-servicos span {
+    color: #FECB00;
+}
+
+.linha {
+    width: 70px;
+    height: 4px;
+    background-color: #FECB00;
+}
+
+.legenda p {
+    color: #ccc;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*Cards de serviços ofertados pela academia*/
+
+.reparticoes-servicos {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.musculacao {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musculacao:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 24px rgba(254, 203, 0, 0.4);
+}
+
+.musculacao img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s;
+}
+
+.musculacao img:hover{
+    scale: 1.1;
+}
+
+.conteudo-musculacao {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo-musculacao h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.especialidade {
+    color: #FECB00;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.descricao {
+    color: #8E9196;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cta {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #FECB00;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.cta:hover {
+    color: #fff;
+}

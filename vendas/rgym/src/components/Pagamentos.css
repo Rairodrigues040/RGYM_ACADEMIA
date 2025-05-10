@@ -1,0 +1,193 @@
+.container-v5 {
+    background-color: #000000;
+    padding: 60px 0;
+}
+
+.nossos-planos {
+    margin: 0 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.nossos-planos h2 {
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nossos-planos span {
+    color: #FECB00;
+}
+
+.linha-planos {
+    width: 70px;
+    height: 4px;
+    background-color: #FECB00;
+}
+
+.legenda-planos p {
+    color: #ccc;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*Cards*/
+.reparticoes-servicos-planos {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card-premium{
+    border: 2px solid #FECB00;
+    width: 330px;
+    background-color: #222222;
+    border-radius: 6px;
+}
+
+.destaque-popular{
+    text-align: center;
+    justify-content: right;
+    display: flex;
+}
+
+.destaque-popular p{
+    background-color: #FECB00;
+    width: 90px;
+    font-size: 14px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.preco-premium{
+    margin-bottom: 12px;
+}
+
+.preco-premium h3,.preco-premium p{
+    color: #ccc;
+    margin: 10px 8%;
+}
+
+.preco-premium p{
+font-size: 30px;
+font-weight: bold;
+color: #FECB00;
+}
+
+.preco-premium p span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #525356;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 8%;
+}
+
+.beneficios p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.escolher-plano {
+    width: 100%;
+    padding: 0 8%;
+    margin-bottom: 20px;
+}
+
+.escolher-plano a {
+    display: block;
+    width: 100%;
+    background-color: #FECB00;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.escolher-plano a:hover {
+    background-color: #e6b800;
+}
+
+/*Plano básico e Familia (não foi definido classes Familia)*/
+.card-basico{
+    width: 330px;
+    background-color: #222222;
+    border-radius: 6px;
+    padding-bottom: 100px;
+}
+
+.preco-basico{
+    margin-top: 55px;
+    margin-bottom: 12px;
+}
+
+.preco-basico h3,.preco-basico p{
+    color: #ccc;
+    margin: 10px 8%;
+}
+
+.preco-basico p{
+font-size: 30px;
+font-weight: bold;
+color: #FECB00;
+}
+
+.preco-basico p span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #525356;
+}
+
+.escolher-plano-basico {
+    width: 80%;
+    padding: 0 8%;
+    margin-bottom: 20px;
+    color: #ccc;
+    border: 1px solid #FECB00;
+    border-radius: 8px;
+    margin: auto;
+    transition: 1s;
+}
+
+.escolher-plano-basico a {
+    display: block;
+    width: 100%;
+    color:#ccc;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.escolher-plano-basico:hover {
+    background-color: #e6b800;
+   
+}
+
+.escolher-plano-basico a:hover{
+    color: #000;
+}
