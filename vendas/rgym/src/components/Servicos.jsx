@@ -12,7 +12,7 @@ const Servicos = () => {
     <div className="container-v4">
         <div className="section-3">
             <div className="nossos-servicos">
-                <h2>NOSSOS <span>SERVIÇOS</span></h2>
+                <h2>NOSSAS <span>MODALIDADES</span></h2>
                 <div className="linha"></div>
                     <div className="legenda">
                     <p>Conheça nossa equipe de profissionais altamente qualificados para te ajudar a alcançar seus objetivos.</p>

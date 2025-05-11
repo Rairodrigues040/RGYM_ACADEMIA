@@ -1,0 +1,107 @@
+.container-v6 {
+    background-color: #222222;
+    padding: 60px 0;
+}
+.depoimentos {
+    margin: 0 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.depoimentos h2 {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.depoimentos span {
+    color: #FECB00;
+}
+
+.linha-planos {
+    width: 70px;
+    height: 4px;
+    background-color: #FECB00;
+}
+
+.legenda-depoimento p {
+    color: #ccc;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*Cards depoimentos*/
+
+.cards-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card-depoimento {
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    border-top: 4px solid #FFD700;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-depoimento:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cabecalho-depoimento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .foto-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #FFD700;
+    object-fit: cover;
+  }
+  
+  .info-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-depoimento h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .tempo-membro {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0.2rem 0;
+  }
+  
+  .estrelas {
+    color: #FFD700;
+  }
+  
+  .texto {
+    font-style: italic;
+    color: #ddd;
+    line-height: 1.5;
+  }
+  
